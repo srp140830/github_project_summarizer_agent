@@ -6,10 +6,10 @@
 
 ## Features
 
-- 🔍 **Profile Discovery**: Automatically searches for a GitHub profile URL based on a person's name.
-- 👤 **Username Extraction**: Extracts the GitHub username from the profile URL to make API requests.
-- 📦 **Repository Analysis**: Retrieves metadata and README contents for the top two repositories.
-- 🤖 **LLM Summarization**: Passes the collected information to an LLM with a structured prompt to generate:
+- **Profile Discovery**: Automatically searches for a GitHub profile URL based on a person's name.
+- **Username Extraction**: Extracts the GitHub username from the profile URL to make API requests.
+- **Repository Analysis**: Retrieves metadata and README contents for the top two repositories.
+- **LLM Summarization**: Passes the collected information to an LLM with a structured prompt to generate:
   - A short summary of each project based on the README.
   - Project details such as:
     - Creation date
