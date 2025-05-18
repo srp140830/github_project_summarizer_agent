@@ -8,4 +8,4 @@ black
 ipykernel
 flask
 flask-Cors
-
+gunicorn
