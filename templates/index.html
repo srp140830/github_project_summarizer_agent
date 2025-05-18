@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GitHub Project Explorer</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 2rem; }
+        form { margin-bottom: 2rem; }
+        input[type="text"] { width: 300px; padding: 8px; }
+        button { padding: 8px 16px; }
+        .project { border: 1px solid #ccc; padding: 1rem; margin-bottom: 1rem; border-radius: 6px; }
+        .summary { font-weight: bold; font-size: 1.1rem; }
+        ul.facts { margin-top: 0.5rem; padding-left: 1.2rem; }
+    </style>
+</head>
+<body>
+    <h1>GitHub Project Summaries</h1>
+
+    <form method="POST">
+        <label for="fullname">Enter GitHub Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required />
+        <button type="submit">Search</button>
+    </form>
+
+    {% if projects %}
+        {% for project in projects %}
+            <div class="project">
+                <div class="summary">{{ project.summary }}</div>
+                <ul class="facts">
+                    {% for fact in project.facts %}
+                        <li>{{ fact }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endfor %}
+    {% endif %}
+</body>
+</html>
