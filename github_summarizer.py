@@ -33,7 +33,7 @@ def github_summarizer(name: str) -> List[Summary]:
 
 
     summary_template = """Given the information {information} about GitHub projects, I want you to:
-    1. A short summary of each project with the name of the repo.
+    1. A short summary of each project.
     2. two facts such as creation date, last update, whether it's a fork, URL, and other relevant details in a concise manner.
     \n{format_instructions}
     """

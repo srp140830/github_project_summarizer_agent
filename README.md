@@ -24,7 +24,7 @@ You can test the GitHub Project Summarizer here https://github-project-summarize
 
 ```text
 Given the information {information} about GitHub projects, I want you to:
-    1. Provide a short summary of each project, including the name of the repository.
+    1. Provide a short summary of each project.
     2. List two facts per project, such as the creation date, last update, whether it's a fork, the URL, or any other relevant details in a concise manner.
 
 
